@@ -20,7 +20,7 @@ def hash_me(msg=""):
 random.seed(0)
 
 
-def makeTransaction(maxValue=3):
+def makeTransaction(maxValue=5):
     # This will create valid transactions in the range of (1,maxValue)
     sign = int(random.getrandbits(1)) * 2 - 1  # This will randomly choose -1 or 1
     amount = random.randint(1, maxValue)
